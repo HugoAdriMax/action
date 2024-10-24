@@ -35,14 +35,14 @@ export function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Légal</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">Mentions légales</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">Confidentialité</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">CGV</a></li>
+            <li><a href="/mentionlegal" className="text-gray-600 hover:text-blue-600">Mentions légales</a></li>
+            <li><a href="/rgpd" className="text-gray-600 hover:text-blue-600">RGPD</a></li>
+            <li><a href="/cgv" className="text-gray-600 hover:text-blue-600">CGV</a></li>
           </ul>
         </div>
       </div>
       <div className="border-t pt-8 text-center text-gray-600">
-        <p>© 2024 Actiom Formation. Tous droits réservés.</p>
+        <p>© 2024 Actiom. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

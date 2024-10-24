@@ -30,7 +30,7 @@ export default function Catalogue() {
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">6000H</span> de formation interactives
             </h1>
             <p className="text-xl text-gray-600">
-              Onlineformapro dispose d'un catalogue de plus de 6000 heures de modules e-learning opérationnels et interactifs.
+              Actiom dispose d'un catalogue de plus de 6000 heures de modules e-learning opérationnels et interactifs.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Catalogue() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Toutes les catégories</h2>
             <p className="text-xl text-gray-600">
-              Découvrez les contenus sur étagère développés par Onlineformapro. Consultez-les dès maintenant parmi les catégories disponibles.
+              Découvrez les contenus sur étagère développés par Actiom. Consultez-les dès maintenant parmi les catégories disponibles.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function Catalogue() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Toutes les productions d'Onlineformapro respectent les normes <span className="font-semibold">SCORM, AICC et xAPI</span>.
+                    Toutes les productions d'Actiom respectent les normes <span className="font-semibold">SCORM, AICC et xAPI</span>.
                     Elles peuvent donc être intégrées à toute plateforme LMS du marché.
                   </p>
                 </CardContent>

@@ -21,32 +21,35 @@ export default function CPFPage() {
         </div>
       </section>
 
-      {/* Qu'est-ce que le CPF Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Qu'est-ce que le CPF ?</h2>
-              <div className="space-y-4">
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Un Compte Personnel de Formation est un organisme qui finance des formations.
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Au cours de leur vie active, les salariés accumulent des droits au sein d'une 
-                  cagnotte qu'ils sont libres d'utiliser pour une ou plusieurs formations.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://cdn.midjourney.com/c108adfa-433d-49bc-a30f-1f91c46fbd94/0_0.png" 
-                alt="CPF" 
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
+{/* Qu'est-ce que le CPF Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="space-y-6">
+        <h2 className="text-3xl font-bold">Qu'est-ce que le CPF ?</h2>
+        <div className="space-y-4">
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Un Compte Personnel de Formation est un organisme qui finance des formations.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Au cours de leur vie active, les salariés accumulent des droits au sein d'une 
+            cagnotte qu'ils sont libres d'utiliser pour une ou plusieurs formations.
+          </p>
         </div>
-      </section>
+      </div>
+      <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl">
+        <iframe 
+          className="absolute inset-0 w-full h-full"
+          src="https://www.youtube-nocookie.com/embed/2sT9qqxRWIQ?si=hhfFHOJJvusBmQzI" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Éligibilité Section */}
       <section className="py-20 bg-gray-50">
