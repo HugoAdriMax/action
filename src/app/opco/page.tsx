@@ -1,3 +1,4 @@
+'use client';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, Info, ArrowRightCircle } from "lucide-react";
@@ -21,9 +22,15 @@ export default function Opcos() {
                 <ArrowRightCircle className="ml-2 h-6 w-6" />
               </Button>
             </div>
+
+            {/* Remplacer l'icône par l'image */}
             <div className="hidden lg:block">
               <div className="relative">
-                <Info className="h-40 w-40 text-blue-600 mx-auto" />
+                <img 
+                  src="https://cdn.midjourney.com/c108adfa-433d-49bc-a30f-1f91c46fbd94/0_2.png" 
+                  alt="OPCO illustration" 
+                  className="rounded-2xl shadow-xl mx-auto"
+                />
               </div>
             </div>
           </div>
