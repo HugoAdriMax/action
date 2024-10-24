@@ -350,38 +350,68 @@ export default function Home() {
         </div>
       </section>
 
+{/* Testimonials Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-12">Ils nous ont fait confiance, pourquoi pas vous ?</h2>
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          name: "ISABELLE",
+          feedback: "J’ai acquis de nouvelles connaissances grâce aux nombreuses ressources fournies par vos formations. Celles-ci me seront précieuses dans la réalisation de mes futurs projets. Merci à vous."
+        },
+        {
+          name: "MATHIEU",
+          feedback: "La formation qui m’a été proposée était complète et simple à suivre. Les intervenants m’ont vraiment écouté et c’était agréable d’être aidé quand cela était nécessaire. Je suis heureux d’avoir suivi cette formation, merci."
+        },
+        {
+          name: "ANGÉLIQUE",
+          feedback: "Je tenais à vous remercier pour votre attention et votre considération tout au long de la formation que j’ai suivi avec plaisir. Merci ACTIOM."
+        }
+      ].map((testimonial, index) => (
+        <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all">
+          <CardContent>
+            <p className="text-gray-600 italic">"{testimonial.feedback}"</p>
+            <p className="mt-4 font-bold text-blue-600">{testimonial.name}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
 {/* CPF Section */}
 <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4">
-    <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
-      <div className="space-y-8 w-full">
-        <h2 className="text-3xl font-bold text-center md:text-left">Faîtes financer votre formation</h2>
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="space-y-8">
+        <h2 className="text-3xl font-bold">Faîtes financer votre formation</h2>
         <div className="space-y-4">
-          <p className="text-gray-600 text-lg leading-relaxed text-center md:text-left">
+          <p className="text-gray-600 text-lg leading-relaxed">
             Un <span className="font-semibold">C</span>ompte{" "}
             <span className="font-semibold">P</span>ersonnel de{" "}
             <span className="font-semibold">F</span>ormation est un organisme qui finance des formations.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed text-center md:text-left">
+          <p className="text-gray-600 text-lg leading-relaxed">
             Au cours de leur vie active, les salariés accumulent des droits au sein d'une
             cagnotte qu'ils sont libres d'utiliser pour une ou plusieurs formations.
           </p>
         </div>
-        <div className="pt-4 flex justify-center md:justify-start">
-          <Link href="/cpf">
-            <Button className="bg-gradient-to-r from-blue-600 to-blue-400 w-full md:w-auto">
-              En savoir plus
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
+        <div className="pt-4">
+  <Link href="/cpf">
+    <Button className="bg-gradient-to-r from-blue-600 to-blue-400">
+      En savoir plus
+      <ArrowRight className="ml-2 h-5 w-5" />
+    </Button>
+  </Link>
+</div>
       </div>
-      <div className="relative flex justify-center items-center w-full">
+      <div className="relative flex justify-center items-center">
         <img
           src="https://actiomformation.fr/wp-content/uploads/2022/09/Logo-officiel-cpf.png"
           alt="Logo CPF"
-          className="rounded-lg w-[200px] md:w-[300px] h-auto object-contain"
+          className="rounded-lg max-w-[300px] w-full object-contain h-[250px]"
         />
       </div>
     </div>

@@ -163,6 +163,15 @@ export default function MicrosoftFormation() {
               </Button>
             </CardContent>
           </Card>
+
+          {/* Image added next to certification */}
+          <div className="relative">
+            <img 
+              src="https://cdn.midjourney.com/7981d6d7-810c-49bc-b953-f4489cdd79ba/0_2.png" 
+              alt="Microsoft Certification"
+              className="rounded-lg shadow-xl w-full"
+            />
+          </div>
         </div>
       </section>
     </div>
