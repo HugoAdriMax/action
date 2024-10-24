@@ -29,11 +29,15 @@ export function Navbar() {
   const [isFormationsOpen, setIsFormationsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3" onClick={closeMobileMenu}>
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
               Actiom
             </span>
@@ -63,13 +67,13 @@ export function Navbar() {
               >
                 <div className="p-4">
                   <ul className="space-y-2">
-                    {formationPrograms.map((formation, index) => (
+                    {formationPrograms.map((formation) => (
                       <li key={formation.name}>
                         <Link
                           href={formation.link}
                           className="text-gray-600 hover:text-blue-600 transition-colors block text-sm py-1"
                         >
-                          {`${index + 1}) ${formation.name}`}
+                          {formation.name}
                         </Link>
                       </li>
                     ))}
@@ -126,13 +130,14 @@ export function Navbar() {
               {isFormationsOpen && (
                 <div className="pl-4 space-y-2">
                   <ul className="space-y-2">
-                    {formationPrograms.map((formation, index) => (
+                    {formationPrograms.map((formation) => (
                       <li key={formation.name}>
                         <Link
                           href={formation.link}
                           className="block text-gray-600 hover:text-blue-600 transition-colors text-sm py-1"
+                          onClick={closeMobileMenu} // Fermer le menu lorsque l'utilisateur clique sur un lien
                         >
-                          {`${index + 1}) ${formation.name}`}
+                          {formation.name}
                         </Link>
                       </li>
                     ))}
@@ -141,21 +146,24 @@ export function Navbar() {
               )}
             </div>
 
-            <Link href="/cpf" className="block text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/cpf" className="block text-gray-600 hover:text-blue-600 transition-colors" onClick={closeMobileMenu}>
               CPF
             </Link>
             
-            <Link href="/opco" className="block text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/opco" className="block text-gray-600 hover:text-blue-600 transition-colors" onClick={closeMobileMenu}>
               L'opco c'est quoi
             </Link>
             
-            <Link href="/contact" className="block text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/contact" className="block text-gray-600 hover:text-blue-600 transition-colors" onClick={closeMobileMenu}>
               Contact
             </Link>
 
             <Button
               className="w-full bg-gradient-to-r from-blue-600 to-blue-400"
-              onClick={() => window.location.href = 'https://actiom.simplelearning.fr/authentication/login'}
+              onClick={() => {
+                closeMobileMenu(); // Fermer le menu avant de rediriger
+                window.location.href = 'https://actiom.simplelearning.fr/authentication/login';
+              }}
             >
               Espace Apprenant
             </Button>
@@ -163,5 +171,5 @@ export function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
