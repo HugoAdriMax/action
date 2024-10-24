@@ -19,8 +19,8 @@ export function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Formation</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">Catalogue</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">CPF</a></li>
+            <li><a href="/catalogue" className="text-gray-600 hover:text-blue-600">Catalogue</a></li>
+            <li><a href="/cpf" className="text-gray-600 hover:text-blue-600">CPF</a></li>
             <li><a href="#" className="text-gray-600 hover:text-blue-600">Entreprises</a></li>
           </ul>
         </div>
@@ -29,7 +29,7 @@ export function Footer() {
           <ul className="space-y-2">
             <li><a href="#" className="text-gray-600 hover:text-blue-600">Notre équipe</a></li>
             <li><a href="#" className="text-gray-600 hover:text-blue-600">Nos valeurs</a></li>
-            <li><a href="#" className="text-gray-600 hover:text-blue-600">Contact</a></li>
+            <li><a href="/contact" className="text-gray-600 hover:text-blue-600">Contact</a></li>
           </ul>
         </div>
         <div>
