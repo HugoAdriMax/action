@@ -2,8 +2,11 @@
 import { Globe2, CheckCircle2, MessageCircle, Users, Award, Target, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useRouter } from 'next/router';
 
 export default function LanguesFormation() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -47,6 +50,10 @@ export default function LanguesFormation() {
                   <strong>Module 13-16 :</strong> Maîtrise plus approfondie.
                   Compétences abordées : Santé mentale, conduite, déménagement, organiser des aventures, etc.
                 </li>
+                <li className="text-gray-600">
+                  <strong>Module 17-20 :</strong> Ces cours permettent aux apprenants de développer leur maîtrise de la langue tout en affinant les compétences de communication essentielles. 
+                  Compétences abordées : Situations d'urgence, divertissements, secteur administratif, apprentissage du quartier, bénévolat, famille et traditions, célébration de vos réussites.
+                </li>
               </ul>
             </div>
 
@@ -71,12 +78,12 @@ export default function LanguesFormation() {
                       <span>Prix sur demande</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
-  <a href="/contact" className="block w-full h-full text-white">
-    Ajouter à mon catalogue
-  </a>
-</Button>
-
+                  <Button
+                    className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400"
+                    onClick={() => router.push('/contact')}
+                  >
+                    Ajouter à mon catalogue
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -103,16 +110,34 @@ export default function LanguesFormation() {
                       <span>Tarif horaire sur demande</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
-  <a href="/contact" className="block w-full h-full text-white">
-    Ajouter à mon catalogue
-  </a>
-</Button>
-
+                  <Button
+                    className="w-full mt-6 bg-gradient-to-r from-blue-600 to-blue-400"
+                    onClick={() => router.push('/contact')}
+                  >
+                    Trouver un formateur
+                  </Button>
                 </CardContent>
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Pourquoi nous choisir */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Pourquoi nous choisir ?</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Nos supports de formation interactifs, captivants et stimulants, permettent un apprentissage rapide. Utilisables à distance ou en présentiel, ils vous permettent de vérifier en continu l'implication et la progression de vos apprenants grâce à des exercices intégrés. Vos stagiaires bénéficient durant toute la durée de la licence d'un accès permanent aux supports de cours pour un apprentissage autonome et durable.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Formateurs experts</h3>
+          <p className="text-lg text-gray-600 mb-6">
+            Nos tuteurs sont disponibles à tout moment en Chat asynchrone ou par courriel sur les parcours E-Learning.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Qualité des formations</h3>
+          <p className="text-lg text-gray-600">
+            Apprentissage captivant, meilleur taux d'achèvement : nos supports de cours interactifs font la différence ! Cette formation est éligible aux différents financements de la formation professionnelle. Adossée au référentiel de compétences de France Compétences, elle est potentiellement éligible aux fonds de la formation professionnelle. Contactez-nous pour en savoir plus.
+          </p>
         </div>
       </section>
     </div>
