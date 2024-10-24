@@ -354,34 +354,34 @@ export default function Home() {
 {/* CPF Section */}
 <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4">
-    <div className="grid md:grid-cols-2 gap-12 items-center">
-      <div className="space-y-8">
-        <h2 className="text-3xl font-bold">Faîtes financer votre formation</h2>
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
+      <div className="space-y-8 w-full">
+        <h2 className="text-3xl font-bold text-center md:text-left">Faîtes financer votre formation</h2>
         <div className="space-y-4">
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 text-lg leading-relaxed text-center md:text-left">
             Un <span className="font-semibold">C</span>ompte{" "}
             <span className="font-semibold">P</span>ersonnel de{" "}
             <span className="font-semibold">F</span>ormation est un organisme qui finance des formations.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 text-lg leading-relaxed text-center md:text-left">
             Au cours de leur vie active, les salariés accumulent des droits au sein d'une
             cagnotte qu'ils sont libres d'utiliser pour une ou plusieurs formations.
           </p>
         </div>
-        <div className="pt-4">
-  <Link href="/cpf">
-    <Button className="bg-gradient-to-r from-blue-600 to-blue-400">
-      En savoir plus
-      <ArrowRight className="ml-2 h-5 w-5" />
-    </Button>
-  </Link>
-</div>
+        <div className="pt-4 flex justify-center md:justify-start">
+          <Link href="/cpf">
+            <Button className="bg-gradient-to-r from-blue-600 to-blue-400 w-full md:w-auto">
+              En savoir plus
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
       </div>
-      <div className="relative flex justify-center items-center">
+      <div className="relative flex justify-center items-center w-full">
         <img
           src="https://actiomformation.fr/wp-content/uploads/2022/09/Logo-officiel-cpf.png"
           alt="Logo CPF"
-          className="rounded-lg max-w-[300px] w-full object-contain h-[250px]"
+          className="rounded-lg w-[200px] md:w-[300px] h-auto object-contain"
         />
       </div>
     </div>
