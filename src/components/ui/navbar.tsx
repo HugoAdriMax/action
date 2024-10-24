@@ -83,7 +83,7 @@ export function Navbar() {
             </div>
 
             <Link href="/cpf" className="text-gray-600 hover:text-blue-600 transition-colors">
-              CPF
+              Eligible CPF
             </Link>
             
             <Link href="/opco" className="text-gray-600 hover:text-blue-600 transition-colors">

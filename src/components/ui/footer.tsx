@@ -38,7 +38,7 @@ export function Footer() {
             <li><a href="/mentionlegal" className="text-gray-600 hover:text-blue-600">Mentions légales</a></li>
             <li><a href="/rgpd" className="text-gray-600 hover:text-blue-600">RGPD</a></li>
             <li><a href="/cgv" className="text-gray-600 hover:text-blue-600">CGV</a></li>
-            <li><a href="/mentionlegal" className="text-gray-600 hover:text-blue-600">Attestation qualiopi</a></li>
+            <li><a href="/qualiopi" className="text-gray-600 hover:text-blue-600">Attestation qualiopi</a></li>
           </ul>
         </div>
       </div>

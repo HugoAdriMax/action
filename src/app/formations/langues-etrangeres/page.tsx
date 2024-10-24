@@ -9,13 +9,7 @@ export default function LanguesFormation() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Image added above the text */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <img 
-              src="https://cdn.midjourney.com/fbc06f4f-3bb6-4f3a-849a-001863c7dca6/0_3.png" 
-              alt="Formation Langues" 
-              className="mx-auto mb-8 rounded-2xl shadow-xl"
-            />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Nos formations en
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent"> langue</span>
@@ -31,7 +25,13 @@ export default function LanguesFormation() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image added above the "Excellence pédagogique" */}
             <div className="space-y-6">
+              <img 
+                src="https://cdn.midjourney.com/fbc06f4f-3bb6-4f3a-849a-001863c7dca6/0_3.png" 
+                alt="Formation Langues" 
+                className="mx-auto mb-8 rounded-2xl shadow-xl"
+              />
               <h2 className="text-3xl font-bold">Excellence pédagogique</h2>
               <p className="text-gray-600 text-lg">
                 Nos programmes sont conçus pour s'adapter à tous les niveaux, du débutant à l'avancé, en développant des compétences linguistiques fondamentales puis avancées.

@@ -87,17 +87,6 @@ export default function MentionsLegales() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Certification Section */}
-          <div className="mt-12 text-center">
-            <div className="max-w-md mx-auto">
-              <img 
-                src="https://actiomformation.fr/wp-content/uploads/2024/01/FM2217991_Certificat-Qualiopi_ACTIOM_page-0001.jpg"  // Remplacez par le vrai chemin de l'image
-                alt="Certification Qualiopi"
-                className="rounded-lg shadow-xl w-full"
-              />
-            </div>
-          </div>
         </div>
       </section>
     </div>
