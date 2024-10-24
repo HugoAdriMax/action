@@ -1,5 +1,5 @@
 'use client';
-import { Globe2, CheckCircle2, MessageCircle, Users, Award, Target, ArrowRight } from "lucide-react";
+import {  Globe2, CheckCircle2, MessageCircle, Users, Award, Target, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -46,63 +46,134 @@ export default function LanguesFormation() {
               </ul>
             </div>
 
-            {/* Modules Linguistiques à la place de l'image */}
+            {/* Modules section à droite */}
             <div className="space-y-8">
-              {[
-                {
-                  title: "Module 1-4 : Bases solides",
-                  features: [
-                    "Salutations et présentations",
-                    "Questions et réponses simples",
-                    "Compétences de lecture et écriture de base",
-                    "Shopping"
-                  ]
-                },
-                {
-                  title: "Module 5-8 : Interactions courantes",
-                  features: [
-                    "Donner des instructions",
-                    "Dire l'heure",
-                    "Interagir dans les restaurants et transports",
-                    "Vie professionnelle"
-                  ]
-                },
-                {
-                  title: "Module 9-12 : Communiquer avec le monde",
-                  features: [
-                    "Exprimer des idées et opinions",
-                    "Sujets actuels",
-                    "Travail et santé",
-                    "Événements importants"
-                  ]
-                },
-                {
-                  title: "Module 13-16 : Maîtrise approfondie",
-                  features: [
-                    "Déménager à l’étranger",
-                    "Naviguer dans son lieu de travail",
-                    "Santé mentale et physique",
-                    "Organisation des aventures"
-                  ]
-                }
-              ].map((module, index) => (
-                <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all">
-                  <CardHeader>
-                    <CardTitle>{module.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      {module.features.map((feature, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all">
+                <CardHeader>
+                  <CardTitle>Caractéristiques</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Support E-learning</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Durée : 12h</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Prix sur demande</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
+  <a href="/contact" className="block w-full h-full text-white">
+    Ajouter à mon catalogue
+  </a>
+</Button>
+
+                </CardContent>
+              </Card>
+
+              <Card className="border-none shadow-lg hover:shadow-xl transition-all">
+                <CardHeader>
+                  <CardTitle>Ajouter un formateur</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Présentiel/Distanciel</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Classe Individuelle/Collective</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Durée sur mesure</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                      <span>Tarif horaire sur demande</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
+  <a href="/contact" className="block w-full h-full text-white">
+    Trouver une formateur
+  </a>
+</Button>
+
+                </CardContent>
+              </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Programmes Linguistiques */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Modules linguistiques</h2>
+            <p className="text-xl text-gray-600">Chaque module met en valeur des compétences linguistiques spécifiques</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Module 1-4 : Bases solides",
+                features: [
+                  "Salutations et présentations",
+                  "Questions et réponses simples",
+                  "Compétences de lecture et écriture de base",
+                  "Shopping"
+                ]
+              },
+              {
+                title: "Module 5-8 : Interactions courantes",
+                features: [
+                  "Donner des instructions",
+                  "Dire l'heure",
+                  "Interagir dans les restaurants et transports",
+                  "Vie professionnelle"
+                ]
+              },
+              {
+                title: "Module 9-12 : Communiquer avec le monde",
+                features: [
+                  "Exprimer des idées et opinions",
+                  "Sujets actuels",
+                  "Travail et santé",
+                  "Événements importants"
+                ]
+              },
+              {
+                title: "Module 13-16 : Maîtrise approfondie",
+                features: [
+                  "Déménager à l’étranger",
+                  "Naviguer dans son lieu de travail",
+                  "Santé mentale et physique",
+                  "Organisation des aventures"
+                ]
+              }
+            ].map((module, index) => (
+              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all">
+                <CardHeader>
+                  <CardTitle>{module.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {module.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-blue-600" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
