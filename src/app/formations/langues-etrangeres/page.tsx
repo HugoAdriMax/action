@@ -71,9 +71,12 @@ export default function LanguesFormation() {
                       <span>Prix sur demande</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400" href="/contact">
-                    Ajouter à mon catalogue
-                  </Button>
+                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
+  <a href="/contact" className="block w-full h-full text-white">
+    Ajouter à mon catalogue
+  </a>
+</Button>
+
                 </CardContent>
               </Card>
 
@@ -100,9 +103,12 @@ export default function LanguesFormation() {
                       <span>Tarif horaire sur demande</span>
                     </li>
                   </ul>
-                  <Button className="w-full mt-6 bg-gradient-to-r from-blue-600 to-blue-400" href="/contact">
-                    Trouver un formateur
-                  </Button>
+                  <Button className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-400">
+  <a href="/contact" className="block w-full h-full text-white">
+    Ajouter à mon catalogue
+  </a>
+</Button>
+
                 </CardContent>
               </Card>
             </div>
