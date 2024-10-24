@@ -83,7 +83,7 @@ export function Navbar() {
             </Link>
             
             <Link href="/opco" className="text-gray-600 hover:text-blue-600 transition-colors">
-              L'opco c'est quoi
+              L'opco c'est quoi ?
             </Link>
             
             <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
